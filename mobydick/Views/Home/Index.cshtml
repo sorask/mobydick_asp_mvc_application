@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <table border="1" width="160px">
+        <caption>Moby Dick Romanı İçin Top 10 Kelime Sıklığı</caption>
+        <tr>
+            <th>Kelime</th>
+            <th>Sayı</th>
+        </tr>
+        @foreach (var word in Model)
+        {
+            <tr>
+                <td width="50%">@word.Wtext</td>
+                <td width="50%">@word.Wcount</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
